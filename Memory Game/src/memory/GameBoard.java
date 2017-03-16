@@ -100,71 +100,12 @@ public class GameBoard extends JPanel {
 		}
 	}
 	public void findCard(Cards _c){
-		if (_c == cardList16.get(0)){
-		_c.setIcon(new ImageIcon(cardList8.get(0)));
-		_c = cardList16.get(0);
-		}
-		if (_c == cardList16.get(1)){
-		_c.setIcon(new ImageIcon(cardList8.get(1)));
-		_c = cardList16.get(1);
-		}
-		if (_c == cardList16.get(2)){
-		_c.setIcon(new ImageIcon(cardList8.get(2)));
-		_c = cardList16.get(2);
-		}
-		if (_c == cardList16.get(3)){
-		_c.setIcon(new ImageIcon(cardList8.get(3)));
-		_c = cardList16.get(3);
-		}
-		if (_c == cardList16.get(4)){
-		_c.setIcon(new ImageIcon(cardList8.get(4)));
-		_c = cardList16.get(4);
-		}
-		if (_c == cardList16.get(5)){
-		_c.setIcon(new ImageIcon(cardList8.get(5)));
-		_c = cardList16.get(5);
-		_c.removeMouseListener(_l1);
-		}
-		if (_c == cardList16.get(6)){
-		_c.setIcon(new ImageIcon(cardList8.get(6)));
-		_c = cardList16.get(6);
-
-		}
-		if (_c == cardList16.get(7)){
-		_c.setIcon(new ImageIcon(cardList8.get(7)));
-		_c = cardList16.get(7);
-		}
-		if (_c == cardList16.get(8)){
-		_c.setIcon(new ImageIcon(cardList8.get(8)));
-		_c = cardList16.get(8);
-		}
-		if (_c == cardList16.get(9)){
-		_c.setIcon(new ImageIcon(cardList8.get(9)));
-		_c = cardList16.get(9);
-		}
-		if (_c == cardList16.get(10)){
-		_c.setIcon(new ImageIcon(cardList8.get(10)));
-		_c = cardList16.get(10);
-		}
-		if (_c == cardList16.get(11)){
-		_c.setIcon(new ImageIcon(cardList8.get(11)));
-		_c = cardList16.get(11);
-		}
-		if (_c == cardList16.get(12)){
-		_c.setIcon(new ImageIcon(cardList8.get(12)));
-		_c = cardList16.get(12);
-		}
-		if (_c == cardList16.get(13)){
-		_c.setIcon(new ImageIcon(cardList8.get(13)));
-		_c = cardList16.get(13);
-		}
-		if (_c == cardList16.get(14)){
-		_c.setIcon(new ImageIcon(cardList8.get(14)));
-		_c = cardList16.get(14);
-		}
-		if (_c == cardList16.get(15)){
-		_c.setIcon(new ImageIcon(cardList8.get(15)));
-		_c = cardList16.get(15);
+		
+		for (int i =0; i<16; i++){
+			if (_c == cardList16.get(i)){
+				_c.setIcon(new ImageIcon(cardList8.get(i)));
+				_c = cardList16.get(i);
+			}
 		}
 	}
 	public void checkCards(){
